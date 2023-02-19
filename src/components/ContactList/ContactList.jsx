@@ -22,14 +22,14 @@ const ContactList = ({ removeContact, contacts }) => {
 export default ContactList;
 
 ContactList.defaultProps = {
-  contacts: [],
+  // contacts: [],
 };
 
 ContactList.propTypes = {
   removeContact: PropTypes.func.isRequired,
   contacts: PropTypes.arrayOf(
     PropTypes.shape({
-      id: PropTypes.string.isRequired,
+      id: PropTypes.string,
       name: PropTypes.string.isRequired,
       number: PropTypes.string.isRequired,
     })
